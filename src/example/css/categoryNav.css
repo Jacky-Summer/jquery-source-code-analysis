@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.menuBox {
+    margin: 20px auto;
+    width: 700px;
+    height: 270px;
+    border: 1px solid #000;
+}
+
+.navBox {
+    float: left;
+    width: 200px;
+    background: lightblue;
+}
+
+.navBox ul li {
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+.navBox ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    height: 100%;
+    font-size: 14px;
+    color: #555;
+}
+
+.navBox ul li a:hover {
+    background: lightcoral;
+}
+
+.detailBox {
+    display: none;
+    float: left;
+    width: 500px;
+    height: 100%;
+    background: #EEE;
+    font-size: 20px;
+}
