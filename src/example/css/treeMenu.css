@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.menuBox {
+    width: 400px;
+    height: 100%;
+    overflow: auto;
+    /*CSS3中新增的背景颜色渐变*/
+    background: -webkit-linear-gradient(top left, lightblue, lightcyan, lightpink, lightgoldenrodyellow);
+}
+
+.menuBox li {
+    list-style: none;
+    position: relative;
+}
+
+.menuBox li span {
+    margin-left: 20px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.menuBox li em {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icon.png") no-repeat;
+}
+
+.menuBox li em.plus {
+    background-position: -59px -28px;
+}
+
+.menuBox li em.minus {
+    background-position: -42px -29px;
+}
+
+.menuBox .level1 {
+    margin-left: 10px;
+}
+
+.menuBox .level2 {
+    margin-left: 20px;
+}
+
+.menuBox .level3 {
+    margin-left: 30px;
+}
+
+.menuBox .level4 {
+    margin-left: 40px;
+}
+
+/*CSS3中的NOT伪类：除了XXX*/
+.menuBox ul:not(.level1) {
+    display: none;
+}

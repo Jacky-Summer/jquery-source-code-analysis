@@ -15,7 +15,6 @@ $(function(){
             $detailBox.css('display','block').html(`当前是导航${val}的内容`);
             return;
         }    
-        console.log(111)
         $detailBox.css('display','none');
         
     });
